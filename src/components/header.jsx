@@ -1,21 +1,19 @@
 import React from "react";
-import { Box, Flex, Link, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
+import { Link } from "react-scroll";
+import "../styles/CommonStyles.css";
 
 const Header = () => {
-  const bgColor = useColorModeValue("gray.100", "gray.900");
-  const textColor = useColorModeValue("gray.600", "white");
-
   return (
     <Flex
       as="nav"
       align="center"
-      //justify="space-between"
       alignItems={"center"}
+      height={10}
       justifyContent={"center"}
       wrap="wrap"
-      padding="1.5 rem"
-      bg={bgColor}
-      color={textColor}
+      bg={"var(--dark)"}
+      color={"var(--light)"}
       position="sticky"
       top={0}
       zIndex={1}
@@ -24,17 +22,24 @@ const Header = () => {
         display={{ base: "block", md: "flex" }}
         width={{ base: "full", md: "auto" }}
       >
-        <Link href="#" p={2}>
-          Home
+        {/* <Link href="#" p={2}> */}
+        <Link to="Home" spy={true} smooth={true} offset={50} duration={500}>
+          <p style={{ margin: "0 15px", fontSize: "1.3rem" }}>Home</p>
         </Link>
-        <Link href="#aboutme" p={2}>
-          About Me
+        <Link to="Aboutme" spy={true} smooth={true} offset={50} duration={500}>
+          <p style={{ margin: "0 15px", fontSize: "1.3rem" }}>About Me</p>
         </Link>
-        <Link href="#skills" p={2}>
-          Skills
+        <Link to="Skills" spy={true} smooth={true} offset={50} duration={500}>
+          <p style={{ margin: "0 15px", fontSize: "1.3rem" }}>Skills</p>
         </Link>
-        <Link href="#contactme" p={2}>
-          Contact Me
+        <Link
+          to="Contactme"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          <p style={{ margin: "0 15px", fontSize: "1.3rem" }}>Contact Me</p>
         </Link>
       </Box>
     </Flex>

@@ -4,42 +4,48 @@ const ContactMe = () => {
   return (
     <Flex
       margin={"auto"}
-      minHeight={"70vh"}
+      minHeight={"100vh"}
       maxWidth={"50vw"}
       alignItems={"center"}
       flexDirection={"column"}
       justifyContent={"center"}
-      id="contactme"
+      id="Contactme"
     >
-      <Text marginBottom={"2vh"}>Contact Me</Text>
+      <Text fontSize={"3rem"} marginBottom={"5vh"}>
+        Contact Me
+      </Text>
       <Link
-        background={"#e6e6e6"}
+        background={"var(--white)"}
         borderRadius={"5px"}
         padding={"5px"}
-        href="#"
+        href="https://www.linkedin.com/in/girinithin/"
+        target="blank"
         width={"15vw"}
+        fontSize={"1.5rem"}
         textAlign={"center"}
         marginBottom={"2vh"}
       >
         LinkedIn
       </Link>
       <Link
-        background={"#e6e6e6"}
+        background={"var(--white)"}
         borderRadius={"5px"}
         padding={"5px"}
         href="#"
         width={"15vw"}
+        fontSize={"1.5rem"}
         textAlign={"center"}
         marginBottom={"2vh"}
       >
         GitHub
       </Link>
       <Link
-        background={"#e6e6e6"}
+        background={"var(--white)"}
         borderRadius={"5px"}
         padding={"5px"}
-        href="#"
+        href="mailto:girinithinyogendra@outlook.com"
         width={"15vw"}
+        fontSize={"1.5rem"}
         textAlign={"center"}
         marginBottom={"2vh"}
       >

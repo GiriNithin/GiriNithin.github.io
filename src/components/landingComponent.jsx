@@ -1,6 +1,7 @@
 import { Text, Flex, Button } from "@chakra-ui/react";
 //import { motion, useScroll } from "framer-motion";
 import React from "react";
+import "../styles/CommonStyles.css";
 
 const LandingComponent = () => {
   return (
@@ -10,11 +11,22 @@ const LandingComponent = () => {
       justifyContent={"Center"}
       direction={"column"}
       id="Home"
+      backgroundColor={"var(--dark)"}
     >
-      <Text fontSize={"1.5rem"} marginBottom={"10px"} maxWidth={"50vw"}>
+      <Text
+        color={"var(--light)"}
+        fontSize={"3rem"}
+        marginBottom={"10px"}
+        maxWidth={"50vw"}
+      >
         Hello, I'm Giri Nithin Yogendra.
       </Text>
-      <Text textAlign={"center"} maxWidth={"50vw"}>
+      <Text
+        color="var(--white)"
+        textAlign={"center"}
+        maxWidth={"50vw"}
+        fontSize={"1.5rem"}
+      >
         I am a Computer Science graduate student with a keen interest in
         Full-Stack Development, Data Engineering and Machine Learning.
       </Text>

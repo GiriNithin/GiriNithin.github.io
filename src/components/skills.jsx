@@ -6,15 +6,21 @@ const Skills = () => {
       margin={"auto"}
       alignItems={"center"}
       justifyContent={"center"}
-      minHeight={"70vh"}
+      minHeight={"100vh"}
       flexDirection={"column"}
-      maxWidth={"50vw"}
-      id="skills"
+      maxWidth={"100vw"}
+      id="Skills"
+      backgroundColor={"var(--dark)"}
     >
-      <Box marginBottom={"6vh"}>
-        <Text fontSize={"1.5rem"}>My Skills</Text>
+      <Box marginBottom={"6vh"} color={"var(--light)"}>
+        <Text fontSize={"3rem"}>My Skills</Text>
       </Box>
-      <SimpleGrid columns={4} spacing={10}>
+      <SimpleGrid
+        columns={4}
+        spacing={10}
+        color={"var(--white)"}
+        fontSize={"1.5rem"}
+      >
         <Text>C++</Text>
         <Text>JavaScript</Text>
         <Text>Python</Text>
